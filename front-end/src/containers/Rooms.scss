@@ -1,0 +1,112 @@
+@import "./App.scss";
+
+.rooms {
+    height: 100%;
+    width: 100%;
+	background: url("../images/rooms/background.png") center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+
+    .row {
+        display: flex;
+    }
+
+	.create {
+		text-decoration: none;
+
+		&__right {
+			background-color: #FF4E4E;
+            margin-top: 3%;
+		}
+
+		&:hover {
+			.create__right {
+				background-color: #FC2828;
+			}
+		}
+	}
+
+	.new {
+		text-decoration: none;
+		height: 35vh;
+
+		&__left {
+            height: 30%;
+            position: relative;
+            top: 90px;
+            left: 50px;
+		}
+
+		&__right {
+			background-color: #335CFF;
+			display: flex;
+            margin-top:3%;
+		}
+
+		&__buttons {
+			display: flex;
+			position: relative;
+			width: 60%;
+			bottom: 40px;
+			left: 30%;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			@media (max-width: $md) {
+				bottom: 90px;
+				left: 40%;
+
+				button {
+					margin: .3rem;
+				}
+			}
+		}
+	}
+
+	&__room {
+		align-content: center;
+		padding: 0;
+
+		&__right {
+			@extend %fullSpace;
+			display: flex;
+			flex-direction: column;
+			border-radius: 15px;
+
+			h2 {
+				font-family: $font-nunito;
+				font-weight: 900;
+				font-size: 3rem;
+				margin: 1rem 0 1rem 1rem;
+				text-decoration: none;
+				color: white;
+
+				@media (max-width: $l) {
+					font-size: 2rem;
+				}
+
+				@media (max-width: $md) {
+					font-size: 1.5rem;
+				}
+			}
+
+			p {
+				font-family: $font-nunito;
+				font-weight: 700;
+				color: white;
+				font-size: 1.2rem;
+				text-decoration: none;
+				margin-left: 1rem;
+				
+				@media (max-width: $l) {
+					font-size: 1rem;
+				}
+
+				@media (max-width: $md) {
+					font-size: .8rem;
+				}
+			}
+		}
+	}
+}

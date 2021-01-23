@@ -1,0 +1,55 @@
+@import "../mixin.scss";
+@import "App.scss";
+
+.recovery {
+	height: 100vh;
+	background: url("../images/recovery/background.png") center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	&__box {
+		background-color: white;
+		height: 70%;
+		border: none;
+		box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+		@include centering(50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 30px;
+		text-align: center;
+	}
+
+	.form-group {
+		text-align: left;
+	}
+
+	p {
+		font-family: $font-nunito;
+		font-size: 1.7rem;
+		margin-bottom: 2rem; 
+		color: black;
+		margin: 7% 5%;
+		font-weight: 700;
+		text-align: center;
+
+		@media (max-width: $md) {
+			font-size: 1.5rem;
+			margin-bottom: 3rem;
+		}	
+	}
+
+	label {
+		font-family: $font-lato;
+		font-size: 1.5rem;
+		color: $color-accent;
+
+		@media (max-width: $md) {
+			font-size: 1.2rem;
+		}	
+	}
+
+	button {
+		margin-top: 1rem;
+	}
+}

@@ -1,0 +1,40 @@
+@import "./App.scss";
+
+
+.signup {
+
+    .btn{
+        border: none;
+        font-size: 1.2rem;
+        background-color: #6F12D8;
+        border-radius: 18px;
+        margin: 0px 150px 0px 150px;
+        border-bottom-width: 16px;   
+        color: whitesmoke;
+    }
+    height: 100vh;
+    background: url("../images/addtutor/newtutor.png")center no-repeat;
+    background-size: cover;
+    
+
+	
+    label {
+        font-size: 1.1rem;
+        color: grey;
+	}	
+h2{
+    font-size: 3rem; 
+    margin: 5% 0% 5% 0%;
+    text-align: center;
+}
+
+.form-group{
+    text-align: center;
+    position: relative;
+}
+.center{
+	position: relative;
+    top: 50%;
+    margin: 1% -30% 0% 22%
+}
+}

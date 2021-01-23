@@ -1,0 +1,35 @@
+@import "./App.scss";
+
+
+.f_game_card{
+    background-color: rgb(248, 245, 245);
+    display: grid;
+
+    
+    //forma d la carta
+    height: 100px;
+    width: 100px;
+    min-height: 160px * 1.618;
+    min-width: 25% * 2 ;
+    
+    margin: 17% 25% -51% 23%;
+
+    border-radius: 18px;
+    
+    align-items: center;
+    text-align: center;
+
+    .endGame_txt{
+        color: gray;
+    }
+}
+
+.btn_endGame{
+
+    border: none;
+    padding: 1% 5%;
+    background-color: rgba(243, 42, 7, 0.952);
+
+    border-radius: 18px;
+
+}
